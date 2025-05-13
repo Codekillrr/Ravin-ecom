@@ -136,7 +136,7 @@ export default function Home() {
                 >
                 </Video>
               </div>
-              <div className="h-full w-[50%] bg-amber-800">
+              <div className="h-full w-[50%] relative overflow-hidden bg-amber-800">
               <Video 
                   src={Video2}
                   autoplay
