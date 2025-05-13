@@ -1,5 +1,7 @@
 import Image from "next/image";
-
+import Video from 'next-video';
+import Video1 from "/videos/raven-v1.mp4"; 
+import Video2 from "/videos/revin-video2.mp4"; 
 
 export default function Home() {
   return (
@@ -11,7 +13,9 @@ export default function Home() {
             <div className="h-14 w-full">
               <div className="px-5 h-full w-full ">
                 <div className="h-full w-[150px] ml-auto flex justify-center items-center">
-                  <div className="font-montserrat text-[0.75rem]">RAVIN BEAUTY</div>
+                  <div className="font-montserrat text-[0.75rem]">RAVIN</div>
+                  <div className="font-montserrat text-[0.75rem] font-bold ">X</div>
+                  <div className="font-montserrat text-[0.75rem]">BEAUTY</div>
                 </div>
               </div>
             </div>
@@ -63,12 +67,38 @@ export default function Home() {
 
             <div className="h-16 w-auto">
               <div className="h-full w-auto px-8 flex items-center">
-                <div className=" flex flex-row w-full">
-                  <div className="w-70 h-full flex justify-center">
-                    <div className="h-full flex font-bold font-Geist_Mono text-[2.35rem] pb-1">
-                      <button className="mb-[0.4rem]">RAVIN</button>
+                <div className="h-full flex flex-row space-x-0 w-full">
+                  {/* <div className="w-70 h-full flex justify-center">
+                    <div className="h-full w-full flex font-bold font-Geist_Mono text-[2.35rem] pb-1">
+
+
+
+                      <div className="relative w-full f-full">
+                      
+
+                      <button className=" absolute">RAVIN</button>
+
+                      <image
+                        src="/SliderImages/image1.png"
+                        alt="image"
+                        fill
+                        className="object-contain absolute"
+                      />
+
+                      </div>
+
+
+
+
                     </div>
-                  </div> 
+                  </div>  */}
+                  <div className="h-full w-70 flex justify-center items-center relative">
+                    <div className="text-[3.5rem] mb-[1.5rem] text-black font-blod absolute">
+                      RAXIN
+                    </div>
+                    <div className="text-[6.5rem] ml-3.5 mb-5 text-black font-bold absolute">X</div>
+
+                  </div>
                   <div className="w-full flex items-center">
                     <div className="font-bold text-xl ml-5 w-full h-[50%] flex flex-row justify-start items-center space-x-9">
                       <button>HIGHLIGHTS</button>
@@ -85,14 +115,41 @@ export default function Home() {
           </nav>
           
         </header>
-        <div className="relative h-[83%] bg-amber-200">
+        <div className="relative h-[83%]">
           <div className="absolute w-full h-full">
-            <Image 
+            {/* <Image 
             src="/SliderImages/image1.png"  
             alt="Description of image"
             fill
             className="object-cover" //object-contain
-            />
+            /> */}
+            <div className="h-full w-full flex flex-row">
+              <div className="h-full w-[50%] relative overflow-hidden bg-amber-300">
+                <Video 
+                  src={Video1}
+                  autoplay
+                  muted
+                  playInline
+                  loop
+                  controls={false}
+                  className="w-full h-full object-cover"
+                >
+                </Video>
+              </div>
+              <div className="h-full w-[50%] bg-amber-800">
+              <Video 
+                  src={Video2}
+                  autoplay
+                  muted
+                  playInline
+                  loop
+                  controls={false}
+                  className="w-full h-full object-cover"
+                >
+
+                </Video>
+              </div>
+            </div>
           </div>
           <div className="top-[70%] m-11 absolute z-5 text-white font-bold ">
             <div className="text-[2.5rem]">MEN'S COLLECTION</div>
