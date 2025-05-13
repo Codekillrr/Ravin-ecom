@@ -124,7 +124,7 @@ export default function Home() {
             className="object-cover" //object-contain
             /> */}
             <div className="h-full w-full flex flex-row">
-              <div className="h-full w-[50%] relative overflow-hidden bg-amber-300">
+              <div className="h-full w-[50%] relative overflow-hidden">
                 <Video 
                   src={Video1}
                   autoplay
@@ -136,7 +136,7 @@ export default function Home() {
                 >
                 </Video>
               </div>
-              <div className="h-full w-[50%] relative overflow-hidden bg-amber-800">
+              <div className="h-full w-[50%] relative overflow-hidden">
               <Video 
                   src={Video2}
                   autoplay
