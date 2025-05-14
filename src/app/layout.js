@@ -1,4 +1,5 @@
-import { Geist, Geist_Mono, Montserrat} from "next/font/google";
+import { Geist, Geist_Mono, Montserrat } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,9 +14,9 @@ const geistMono = Geist_Mono({
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
-  subsets: ['latin'],
-  weight: ['400', '600'], 
-})
+  subsets: ["latin"],
+  weight: ["400", "600"],
+});
 
 export const metadata = {
   title: "RAVIN X FASHION",
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} antialiased`}
       >
+        <Analytics />
         {children}
       </body>
     </html>

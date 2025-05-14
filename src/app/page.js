@@ -208,6 +208,7 @@ export default function Home() {
                   playInline
                   loop
                   controls={false}
+                  videoQuality="premium"
                   className="w-full h-full object-cover"
                 ></Video>
               </div>
