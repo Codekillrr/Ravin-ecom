@@ -8,7 +8,7 @@ export default function Home() {
     <div className="h-full w-full">
       <div className="absolute w-full h-full overflow-auto">
         <header className="sticky inset-0 z-10">
-          <nav className="bg-white h-[22%] border-b border-gray-200">
+          <nav className="bg-white h-[22%] lg:border-b border-gray-200">
             <div className="max-lg:hidden h-14 w-full">
               <div className="px-5 h-full w-full ">
                 <div className="h-full w-[150px] ml-auto flex justify-center items-center">
@@ -112,7 +112,7 @@ export default function Home() {
 
             <div className="lg:h-16 max-lg:mt-2 max-lg:h-20 w-auto max-lg:flex max-lg:flex-col max-lg:space-y-0">
               <div className="h-full w-auto lg:px-8 flex max-lg:justify-between items-center">
-                <div className="h-full w-[10%] lg:hidden flex justify-center items-center">
+                <div className="h-full w-[10%] ml-5 lg:hidden flex justify-center items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -149,7 +149,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="h-full w-[10%] lg:hidden flex justify-center items-center">
+                <div className="h-full w-[10%] mr-5 lg:hidden flex justify-center items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -166,9 +166,9 @@ export default function Home() {
                   </svg>
                 </div>
               </div>
-              <div className="w-full h-full lg:hidden flex border-b border-black flex-row bottom-0 justify-evenly items-center group cursor-pointer">
+              <div className="w-full h-full lg:hidden flex border-b border-black flex-row bottom-0 justify-center items-center group cursor-pointer">
                 <svg
-                  className="size-5 ml-3 z-10 group cursor-pointer"
+                  className="size-5 mr-2 z-10 group cursor-pointer"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -184,7 +184,7 @@ export default function Home() {
                 <input
                   type="text"
                   placeholder="SEARCH"
-                  className="w-[90%] focus:scale-100 focus:outline-none  "
+                  className="w-[80%] focus:scale-100 focus:outline-none  "
                 ></input>
               </div>
             </div>
@@ -200,7 +200,7 @@ export default function Home() {
             className="object-cover" //object-contain
             /> */}
             <div className="h-full w-full flex flex-row">
-              <div className="h-full w-[50%] relative overflow-hidden">
+              <div className="h-full lg:w-[50%] max-lg:hidden relative overflow-hidden">
                 <Video
                   src={Video1}
                   autoplay
@@ -211,7 +211,7 @@ export default function Home() {
                   className="w-full h-full object-cover"
                 ></Video>
               </div>
-              <div className="h-full w-[50%] relative overflow-hidden">
+              <div className="h-full lg:w-[50%] relative overflow-hidden">
                 <Video
                   src={Video2}
                   autoplay
@@ -225,12 +225,15 @@ export default function Home() {
             </div>
           </div>
           <div className="top-[70%] m-11 absolute z-5 text-white font-bold ">
-            <div className="text-[2.5rem]">MEN'S COLLECTION</div>
-            <button className="m-[2px] text-lg px-5 py-2 border-white border-[1px] hover:text-blue-300 hover:border-blue-300">
+            <div className="text-[2.5rem] max-lg:text-[2rem] ">
+              MEN'S COLLECTION
+            </div>
+            <button className="m-[2px] text-lg max-lg:px-3 max-lg:py-1 px-5 py-2 border-white border-[1px] hover:text-blue-300 hover:border-blue-300">
               SHOP NOW
             </button>
           </div>
         </div>
+
         <div className="h-[65%] my-10 border-2 border-black">NEW ARRIVALS</div>
 
         <div className="h-[83%] relative">
@@ -243,8 +246,10 @@ export default function Home() {
             />
           </div>
           <div className="top-[70%] m-11 absolute z-5 text-white font-bold ">
-            <div className="text-[2.5rem]">MEN'S SUMMER 25</div>
-            <button className="m-[2px] text-lg px-5 py-2 border-white border-[1px] hover:text-blue-300 hover:border-blue-300">
+            <div className="text-[2.5rem] max-lg:text-[2rem]">
+              MEN'S SUMMER 25
+            </div>
+            <button className="m-[2px] max-lg:px-3 max-lg:py-1 text-lg px-5 py-2 border-white border-[1px] hover:text-blue-300 hover:border-blue-300">
               SHOP NOW
             </button>
           </div>
@@ -259,8 +264,10 @@ export default function Home() {
             />
           </div>
           <div className="top-[70%] m-11 absolute z-5 text-white font-bold ">
-            <div className="text-[2.5rem] text-black">WOMEN'S SUMMER 25</div>
-            <button className="m-[2px] text-lg text-black px-5 py-2 border-black border-[1px] hover:text-blue-300 hover:border-blue-300">
+            <div className="text-[2.5rem] max-lg:text-[1.8rem] text-black">
+              WOMEN'S <br className="md:hidden" /> SUMMER 25
+            </div>
+            <button className="m-[2px] max-lg:px-3 max-lg:py-1 text-lg text-black px-5 py-2 border-black border-[1px] hover:text-blue-300 hover:border-blue-300">
               SHOP NOW
             </button>
           </div>
@@ -275,8 +282,10 @@ export default function Home() {
             />
           </div>
           <div className="top-[70%] m-11 absolute z-5 text-white font-bold ">
-            <div className="text-[2.5rem]">GIFTS FOR HIM</div>
-            <button className="m-[2px] text-lg px-5 py-2 border-white border-[1px] hover:text-blue-300 hover:border-blue-300">
+            <div className="text-[2.5rem] max-lg:text-[2rem]">
+              GIFTS FOR HIM
+            </div>
+            <button className="m-[2px] max-lg:px-3 max-lg:py-1 text-lg px-5 py-2 border-white border-[1px] hover:text-blue-300 hover:border-blue-300">
               SHOP NOW
             </button>
           </div>
@@ -291,8 +300,8 @@ export default function Home() {
             />
           </div>
           <div className="top-[70%] m-11 absolute z-5 text-white font-bold ">
-            <div className="text-[2.5rem]">EYEWEAR</div>
-            <button className="m-[2px] text-lg px-5 py-2 border-white border-[1px] hover:text-blue-300 hover:border-blue-300">
+            <div className="text-[2.5rem] max-lg:text-[2rem]">EYEWEAR</div>
+            <button className="m-[2px] max-lg:px-3 max-lg:py-1 text-lg px-5 py-2 border-white border-[1px] hover:text-blue-300 hover:border-blue-300">
               SHOP NOW
             </button>
           </div>
