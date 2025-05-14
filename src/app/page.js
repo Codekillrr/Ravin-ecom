@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Video from "next-video";
 import Video1 from "/videos/raven-v1.mp4";
-import Video2 from "/videos/revin-video2.mp4";
+import Video2 from "/videos/raven-x-v1.mp4";
 
 export default function Home() {
   return (
