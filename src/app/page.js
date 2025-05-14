@@ -224,7 +224,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="top-[70%] m-11 absolute z-5 text-white font-bold ">
+          <div className="top-[70%] m-11 max-lg:m-6 absolute z-5 text-white font-bold ">
             <div className="text-[2.5rem] max-lg:text-[2rem] ">
               MEN'S COLLECTION
             </div>
@@ -245,7 +245,7 @@ export default function Home() {
               className="object-cover" //object-contain
             />
           </div>
-          <div className="top-[70%] m-11 absolute z-5 text-white font-bold ">
+          <div className="top-[70%] m-11 max-lg:m-6 absolute z-5 text-white font-bold ">
             <div className="text-[2.5rem] max-lg:text-[2rem]">
               MEN'S SUMMER 25
             </div>
@@ -263,7 +263,7 @@ export default function Home() {
               className="object-cover" //object-contain
             />
           </div>
-          <div className="top-[70%] m-11 absolute z-5 text-white font-bold ">
+          <div className="top-[70%] m-11 max-lg:m-6 absolute z-5 text-white font-bold ">
             <div className="text-[2.5rem] max-lg:text-[1.8rem] text-black">
               WOMEN'S <br className="md:hidden" /> SUMMER 25
             </div>
@@ -281,7 +281,7 @@ export default function Home() {
               className="object-cover" //object-contain
             />
           </div>
-          <div className="top-[70%] m-11 absolute z-5 text-white font-bold ">
+          <div className="top-[70%] m-11 max-lg:m-6 absolute z-5 text-white font-bold ">
             <div className="text-[2.5rem] max-lg:text-[2rem]">
               GIFTS FOR HIM
             </div>
@@ -299,7 +299,7 @@ export default function Home() {
               className="object-cover" //object-contain
             />
           </div>
-          <div className="top-[70%] m-11 absolute z-5 text-white font-bold ">
+          <div className="top-[70%] max-lg:m-6 m-11 absolute z-5 text-white font-bold ">
             <div className="text-[2.5rem] max-lg:text-[2rem]">EYEWEAR</div>
             <button className="m-[2px] max-lg:px-3 max-lg:py-1 text-lg px-5 py-2 border-white border-[1px] hover:text-blue-300 hover:border-blue-300">
               SHOP NOW
