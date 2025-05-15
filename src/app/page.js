@@ -110,7 +110,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="lg:h-17 max-lg:mt-3 max-lg:h-20 w-auto max-lg:flex max-lg:flex-col max-lg:space-y-0">
+            <div className="lg:h-17 max-lg:pt-3.5 max-lg:h-20 w-auto max-lg:flex max-lg:flex-col max-lg:space-y-0">
               <div className="h-full w-auto lg:px-8 flex max-lg:justify-between items-center">
                 <div className="h-full w-[10%] ml-5 lg:hidden flex justify-center items-center">
                   <svg
