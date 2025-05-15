@@ -129,7 +129,7 @@ export default function Home() {
                   </svg>
                 </div>
 
-                <div className="h-full flex lg:flex-row space-x-0 w-[80%] max-lg:w-[30%] max-lg:pr-2.25 max-lg:justify-center">
+                <div className="flex h-full lg:flex-row space-x-0 w-[80%] max-lg:w-[30%] max-lg:pr-2.25 max-lg:justify-center">
                   <div className="h-full lg:w-[30%] max-lg:w-full flex justify-center items-center relative">
                     <div className="lg:text-[3.5rem] max-lg:text-[2.3rem] lg:mb-[1.5rem] text-black font-blod absolute">
                       RAXIN
@@ -166,9 +166,10 @@ export default function Home() {
                   </svg>
                 </div>
               </div>
-              <div className="w-full h-full lg:hidden flex border-b border-black flex-row bottom-0 justify-center items-center group cursor-pointer">
+              {/* <div className="w-full h-full flex justify-center"> */}
+              <div className="w-full h-full relative lg:hidden flex border-b border-black flex-row justify-end bottom-0 space-x-0 items-center group cursor-pointer">
                 <svg
-                  className="size-5 mr-2 z-10 group cursor-pointer"
+                  className="size-5 absolute left-[7%] w-[5%] mr-1 z-10 group cursor-pointer"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -184,9 +185,10 @@ export default function Home() {
                 <input
                   type="text"
                   placeholder="SEARCH"
-                  className="w-[80%] focus:scale-100 focus:outline-none  "
+                  className="w-[87%] pr-11 focus:scale-100 focus:outline-none  "
                 ></input>
               </div>
+              {/* </div> */}
             </div>
           </nav>
         </header>
