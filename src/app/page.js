@@ -129,7 +129,7 @@ export default function Home() {
                   </svg>
                 </div>
 
-                <div className="h-full flex lg:flex-row space-x-0 w-[80%] max-lg:w-[20%] max-lg:justify-center">
+                <div className="h-full flex lg:flex-row space-x-0 w-[80%] max-lg:w-[30%] max-lg:pr-2.25 max-lg:justify-center">
                   <div className="h-full lg:w-[30%] max-lg:w-full flex justify-center items-center relative">
                     <div className="lg:text-[3.5rem] max-lg:text-[2.3rem] lg:mb-[1.5rem] text-black font-blod absolute">
                       RAXIN
