@@ -237,10 +237,29 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="h-[50%] my-10">
-          <div className="w-full h-20 px-5">
-            <div className="text-2xl font-bold">NEW ARRIVALS</div>
-            <div className="text-[0.75] font-bold">SHOP ALL</div>
+        <div className="h-[48%] my-5">
+          <div className="w-full h-15 px-5 flex flex-row justify-between">
+            <div className="h-full w-[60%]">
+              <div className="text-2xl font-bold">NEW ARRIVALS</div>
+              <div className="text-[0.75] font-bold">SHOP ALL</div>
+            </div>
+            <div className="h-full flex justify-center items-center w-[20%]">
+              {/* <div className="h-[50%] w-full border-2"></div> */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="size-7"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75"
+                />
+              </svg>
+            </div>
           </div>
           <div className="flex flex-row space-x-0 p-4">
             <div className="h-full w-[50%]">
@@ -363,6 +382,10 @@ export default function Home() {
               alt="Description of image"
               fill
               className="object-cover" //object-contain
+              style={{
+                objectPosition: "53% 0%",
+                //transform: //'scale(0.8)'
+              }}
             />
           </div>
           <div className="top-[70%] max-lg:m-6 m-11 absolute z-5 text-white font-bold ">
@@ -374,8 +397,23 @@ export default function Home() {
         </div>
 
         <footer className="h-[38%]">
-          <div className="h-[70%]">FOOTER 1</div>
-          <div className="h-[30% border-t-[1px] border-gray-200">FOOTER 2</div>
+          <div className="h-[60%] mx-4">
+            <div className="flex flex-row h-[30%]">
+              <div className="border-b-2 border-black">
+                <input
+                  type="text"
+                  placeholder="ENTER EMAIL ADDRESS"
+                  className="w-full bottom-0  "
+                ></input>
+              </div>
+            </div>
+            <div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div className="h-[40% border-t-[1px] border-gray-200">FOOTER 2</div>
         </footer>
       </div>
     </div>
