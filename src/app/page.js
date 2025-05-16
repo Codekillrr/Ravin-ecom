@@ -1,7 +1,14 @@
+"use client";
+
 import Image from "next/image";
 import Video from "next-video";
 import Video1 from "/videos/raven-v1.mp4";
 import Video2 from "/videos/Ravinx-new-vid.mp4";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
 
 export default function Home() {
   return (
@@ -237,7 +244,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="h-[48%] my-5">
+        <div className="h-[400px] my-5">
           <div className="w-full h-15 px-5 flex flex-row justify-between">
             <div className="h-full w-[60%]">
               <div className="text-2xl font-bold">NEW ARRIVALS</div>
@@ -261,53 +268,110 @@ export default function Home() {
               </svg>
             </div>
           </div>
-          <div className="flex flex-row space-x-0 p-4">
-            <div className="h-full w-[50%]">
-              <div className="h-full w-full border-b border-gray-200 border-[1px] bg-linear-[225deg,gray_20%,white_80%]">
-                <Image
-                  src="/image.png"
-                  alt="Description of image"
-                  width={400}
-                  height={200}
-                  className=""
-                />
-              </div>
-              <div className="pr-3 pt-3 font-geistMono">
-                <div className="text-[0.8rem] font-bold">
-                  DOUBLE REATED PEAKED LAPEL JACKET
+          <div className="w-full max-w-[900px] mx-auto h-[360px] p-4">
+            <Swiper
+              slidesPerView={2}
+              spaceBetween={10}
+              modules={[Pagination]}
+              className="h-full w-full"
+              pagination={{
+                //el: ".custom-pagination",
+                clickable: true,
+                // renderBullet: function (index, className) {
+                //   return `<span class="${className} block h-[1px] flex-1 bg-gray-400 transition-all duration-300"></span>`;
+                // },
+              }}
+            >
+              <SwiperSlide>
+                <div className="flex flex-col h-full w-full border-[1px] border-gray-200 bg-gradient-to-br from-gray-200 to-white">
+                  <Image
+                    src="/image.png"
+                    alt="Description of image"
+                    width={400}
+                    height={200}
+                    className="w-full h-[200px] object-cover"
+                  />
+                  <div className="flex flex-col justify-between p-3 font-geistMono">
+                    <div className="text-[0.8rem] font-bold">
+                      DOUBLE BREASTED PEAKED LAPEL JACKET
+                    </div>
+                    <div className="text-[0.75rem]">$5,790</div>
+                  </div>
                 </div>
-                <div className="text-[0.75rem]">$5,790</div>
-                <div></div>
-              </div>
+              </SwiperSlide>
 
-              <div>
-                <div></div>
-                <div></div>
-              </div>
-            </div>
-            <div className="h-full w-[50%]">
-              <div className="h-full w-full border-b border-l-0 border-gray-200 border-[1px] bg-linear-[225deg,gray_20%,white_80%]">
-                <Image
-                  src="/image copy.png"
-                  alt="Description of image"
-                  width={400}
-                  height={200}
-                  className=""
-                />
-              </div>
-              <div className="pr-3 pt-3 font-geistMono">
-                <div className="text-[0.8rem] font-bold">
-                  LONG SLEEVE V-NECK LAVALLIERE BLOUSE
+              <SwiperSlide>
+                <div className="flex flex-col h-full w-full border-[1px] border-gray-200 bg-gradient-to-br from-gray-200 to-white">
+                  <Image
+                    src="/image copy.png"
+                    alt="Description of image"
+                    width={400}
+                    height={200}
+                    className="w-full h-[200px] object-cover"
+                  />
+                  <div className="flex flex-col justify-between p-3 font-geistMono">
+                    <div className="text-[0.8rem] font-bold">
+                      LONG SLEEVE V-NECK LAVALLIERE BLOUSE
+                    </div>
+                    <div className="text-[0.75rem]">$2,450</div>
+                  </div>
                 </div>
-                <div className="text-[0.75rem]">$2,450</div>
-                <div></div>
-              </div>
+              </SwiperSlide>
 
-              <div>
-                <div></div>
-                <div></div>
-              </div>
-            </div>
+              <SwiperSlide>
+                <div className="flex flex-col h-full w-full border-[1px] border-gray-200 bg-gradient-to-br from-gray-200 to-white">
+                  <Image
+                    src="/image.png"
+                    alt="Description of image"
+                    width={400}
+                    height={200}
+                    className="w-full h-[200px] object-cover"
+                  />
+                  <div className="flex flex-col justify-between p-3 font-geistMono">
+                    <div className="text-[0.8rem] font-bold">
+                      DOUBLE BREASTED PEAKED LAPEL JACKET
+                    </div>
+                    <div className="text-[0.75rem]">$5,790</div>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="flex flex-col h-full w-full border-[1px] border-gray-200 bg-gradient-to-br from-gray-200 to-white">
+                  <Image
+                    src="/image.png"
+                    alt="Description of image"
+                    width={400}
+                    height={200}
+                    className="w-full h-[200px] object-cover"
+                  />
+                  <div className="flex flex-col justify-between p-3 font-geistMono">
+                    <div className="text-[0.8rem] font-bold">
+                      DOUBLE BREASTED PEAKED LAPEL JACKET
+                    </div>
+                    <div className="text-[0.75rem]">$5,790</div>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="flex flex-col h-full w-full border-[1px] border-gray-200 bg-gradient-to-br from-gray-200 to-white">
+                  <Image
+                    src="/image.png"
+                    alt="Description of image"
+                    width={400}
+                    height={200}
+                    className="w-full h-[200px] object-cover"
+                  />
+                  <div className="flex flex-col justify-between p-3 font-geistMono">
+                    <div className="text-[0.8rem] font-bold">
+                      DOUBLE BREASTED PEAKED LAPEL JACKET
+                    </div>
+                    <div className="text-[0.75rem]">$5,790</div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
 
@@ -396,24 +460,83 @@ export default function Home() {
           </div>
         </div>
 
-        <footer className="h-[38%]">
+        <footer className="h-[50%]">
           <div className="h-[60%] mx-4">
-            <div className="flex flex-row h-[30%]">
-              <div className="border-b-2 border-black">
-                <input
-                  type="text"
-                  placeholder="ENTER EMAIL ADDRESS"
-                  className="w-full bottom-0  "
-                ></input>
+            <div className="h-[22%] w-full flex flex-row justify-between items-end">
+              <div className="flex flex-row w-[70%] justify-between h-[25%] items-center">
+                <div className="border-b-[1px] w-[100%] border-black h-full flex items-end">
+                  <input
+                    type="text"
+                    placeholder="ENTER EMAIL ADDRESS"
+                    className="w-full bottom-0 pb-[0.3rem] text-[0.82rem] text-black font-geistMono"
+                  ></input>
+                </div>
+              </div>
+
+              <div className="h-full flex w-[40%] justify-center px-4 items-end">
+                <div className="h-[70%] w-[100%] text-[0.82rem] border-[1px] flex justify-center items-center font-bold font-geistMono">
+                  SUBSCRIBE
+                </div>
               </div>
             </div>
-            <div>
-              <div></div>
-              <div></div>
-              <div></div>
+            <div className="mt-3 h-[30%] w-full border-b-[1px] border-gray-400 flex flex-row justify-between items-center">
+              <div>CUSTUMER SUPPORT</div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="size-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </div>
+            <div className=" h-[30%] w-full border-b-[1px] border-gray-400 flex flex-row justify-between items-center">
+              <div>SERVICE</div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="size-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
             </div>
           </div>
-          <div className="h-[40% border-t-[1px] border-gray-200">FOOTER 2</div>
+          <div></div>
+          <div className="h-[40%] border-t-[1px] border-gray-200 p-4">
+            <div className="font-montserrat text-[2.5rem]">RAVIN X</div>
+            <div className="font-montserrat text-[0.6rem] h-[30%]">
+              <div className=" h-full w-[80%]">
+                <div className="flex flex-row justify-between">
+                  <div className="w-[20%] flex justify-end">
+                    <div>SITE MAP</div>
+                  </div>
+                  <div className="w-[36%] flex flex-row justify-between">
+                    <div>|</div>
+                    <div>PRIVACY POLICY</div> <div>|</div>
+                  </div>
+                  <div className="w-[30%]">
+                    <div>TERMS & CONDITIONS</div>
+                  </div>
+                </div>
+                <div className="font-montserrat text-[0.6rem]">
+                  © TOM FORD ALL RIGHTS RESERVED
+                </div>
+              </div>
+            </div>
+          </div>
         </footer>
       </div>
     </div>
