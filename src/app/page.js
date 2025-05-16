@@ -237,15 +237,72 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="h-[65%] my-10 border-2 border-black">NEW ARRIVALS</div>
+        <div className="h-[50%] my-10">
+          <div className="w-full h-20 px-5">
+            <div className="text-2xl font-bold">NEW ARRIVALS</div>
+            <div className="text-[0.75] font-bold">SHOP ALL</div>
+          </div>
+          <div className="flex flex-row space-x-0 p-4">
+            <div className="h-full w-[50%]">
+              <div className="h-full w-full border-b border-gray-200 border-[1px] bg-linear-[225deg,gray_20%,white_80%]">
+                <Image
+                  src="/image.png"
+                  alt="Description of image"
+                  width={400}
+                  height={200}
+                  className=""
+                />
+              </div>
+              <div className="pr-3 pt-3 font-geistMono">
+                <div className="text-[0.8rem] font-bold">
+                  DOUBLE REATED PEAKED LAPEL JACKET
+                </div>
+                <div className="text-[0.75rem]">$5,790</div>
+                <div></div>
+              </div>
 
-        <div className="h-[83%] relative">
+              <div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <div className="h-full w-[50%]">
+              <div className="h-full w-full border-b border-l-0 border-gray-200 border-[1px] bg-linear-[225deg,gray_20%,white_80%]">
+                <Image
+                  src="/image copy.png"
+                  alt="Description of image"
+                  width={400}
+                  height={200}
+                  className=""
+                />
+              </div>
+              <div className="pr-3 pt-3 font-geistMono">
+                <div className="text-[0.8rem] font-bold">
+                  LONG SLEEVE V-NECK LAVALLIERE BLOUSE
+                </div>
+                <div className="text-[0.75rem]">$2,450</div>
+                <div></div>
+              </div>
+
+              <div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="h-[70%] relative">
           <div className="absolute w-full h-full">
             <Image
-              src="/SliderImages/image6.png"
+              src="/image copy 2.png"
               alt="Description of image"
               fill
               className="object-cover" //object-contain
+              style={{
+                objectPosition: "100% 0%",
+                //transform: //'scale(0.8)'
+              }}
             />
           </div>
           <div className="top-[70%] m-11 max-lg:m-6 absolute z-5 text-white font-bold ">
@@ -257,13 +314,19 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="h-[83%] relative">
+        <div className="h-[70%] relative">
           <div className="absolute w-full h-full">
             <Image
               src="/SliderImages/image7.png"
               alt="Description of image"
               fill
               className="object-cover" //object-contain
+              style={
+                {
+                  //objectPosition:
+                  //transform: "scale(0.8)",
+                }
+              }
             />
           </div>
           <div className="top-[70%] m-11 max-lg:m-6 absolute z-5 text-white font-bold ">
@@ -275,7 +338,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="h-[83%] relative">
+        <div className="h-[70%] relative">
           <div className="absolute w-full h-full">
             <Image
               src="/SliderImages/image4.png"
@@ -293,7 +356,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="h-[83%] relative">
+        <div className="h-[70%] relative">
           <div className="absolute w-full h-full">
             <Image
               src="/SliderImages/image5.png"
