@@ -532,7 +532,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="font-montserrat text-[0.6rem]">
-                  © TOM FORD ALL RIGHTS RESERVED
+                  © RAVIN X ALL RIGHTS RESERVED
                 </div>
               </div>
             </div>
