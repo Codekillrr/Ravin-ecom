@@ -460,9 +460,9 @@ export default function Home() {
           </div>
         </div>
 
-        <footer className="h-[50%]">
-          <div className="h-[60%] mx-4">
-            <div className="h-[22%] w-full flex flex-row justify-between items-end">
+        <footer className="h-[40rem] flex flex-col space-y-5 mt-5">
+          <div className="h-[30rem] mx-4">
+            <div className="h-[4rem] w-full flex flex-row justify-between items-end">
               <div className="flex flex-row w-[70%] justify-between h-[25%] items-center">
                 <div className="border-b-[1px] w-[100%] border-black h-full flex items-end">
                   <input
@@ -479,43 +479,50 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="mt-3 h-[30%] w-full border-b-[1px] border-gray-400 flex flex-row justify-between items-center">
-              <div>CUSTUMER SUPPORT</div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="size-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
-                />
-              </svg>
+            <div className="mt-3 h-[40%] py-4 w-full border-b-[1px] border-gray-400 flex flex-col justify-between items-center">
+              <div className="w-full flex text-[1.1rem] justify-start font-geistMono">
+                CUSTUMER SUPPORT
+              </div>
+              <div className="w-full text-[0.9rem] text-gray-500 flex justify-start">
+                TRACK YOUR ORDER
+              </div>
+              <div className="w-full text-[0.9rem] text-gray-500 flex justify-start font-geistMono">
+                CONTACT US
+              </div>
+              <div className="w-full text-[0.9rem] text-gray-500 flex justify-start font-geistMono">
+                STORE LOCATIONS
+              </div>
+              <div className="w-full text-[0.9rem] text-gray-500 flex justify-start font-geistMono">
+                FAQ
+              </div>
+              <div className="w-full text-[0.9rem] text-gray-500 flex justify-start font-geistMono">
+                SHIPPING & RETURNS
+              </div>
             </div>
-            <div className=" h-[30%] w-full border-b-[1px] border-gray-400 flex flex-row justify-between items-center">
-              <div>SERVICE</div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="size-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
-                />
-              </svg>
+            <div className=" h-[18%] py-4 w-full border-b-[1px] border-gray-400 flex flex-col space-y-2 justify-start items-center">
+              <div className="w-full flex text-[1.1rem] justify-start font-geistMono">
+                SERVICE
+              </div>
+              <div className="w-full text-[0.9rem] text-gray-500 flex justify-start">
+                MADE TO MEASURE
+              </div>
+            </div>
+            <div className=" h-[30%] py-4 w-full  flex flex-col space-y-2 justify-start items-center">
+              <div className="w-full flex text-[1.1rem] justify-start font-geistMono">
+                ABOUT
+              </div>
+              <div className="w-full text-[0.9rem] text-gray-500 flex justify-start">
+                NEWS
+              </div>
+              <div className="w-full text-[0.9rem] text-gray-500 flex justify-start">
+                PRIVACY POLICY
+              </div>
+              <div className="w-full text-[0.9rem] text-gray-500 flex justify-start">
+                ACCESSIBLITY
+              </div>
             </div>
           </div>
-          <div></div>
-          <div className="h-[40%] border-t-[1px] border-gray-200 p-4">
+          <div className="h-[10%] border-t-[1px] border-gray-200 p-4">
             <div className="font-montserrat text-[2.5rem]">RAVIN X</div>
             <div className="font-montserrat text-[0.6rem] h-[30%]">
               <div className=" h-full w-[80%]">
