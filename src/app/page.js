@@ -557,12 +557,12 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="h-[10%] border-t-[1px] border-gray-200 p-4">
-            <div className="font-montserrat text-red-500 text-[2.5rem]">
+          <div className="h-[10%] border-t-[1px] border-gray-200">
+            <div className="font-montserrat text-red-500 text-[2.5rem] pl-5">
               RAVIN X
             </div>
             <div className="font-montserrat text-[0.6rem] h-[30%]">
-              <div className=" h-full w-[80%]">
+              <div className="h-full w-[80%]">
                 <div className="flex flex-row justify-between">
                   <div className="w-[20%] flex justify-end">
                     <div>SITE MAP</div>
@@ -575,7 +575,7 @@ export default function Home() {
                     <div>TERMS & CONDITIONS</div>
                   </div>
                 </div>
-                <div className="font-montserrat text-[0.6rem]">
+                <div className="font-montserrat text-[0.6rem] pl-5 mt-4">
                   © RAVIN X ALL RIGHTS RESERVED
                 </div>
               </div>
