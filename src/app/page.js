@@ -117,7 +117,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="lg:h-17 max-lg:pt-3.5 max-lg:h-20 w-auto max-lg:flex max-lg:flex-col max-lg:space-y-0">
+            <div className="lg:h-17 max-lg:pt-3.5 max-lg:h-18 w-auto max-lg:flex max-lg:flex-col max-lg:space-y-0">
               <div className="h-full w-auto lg:px-8 flex max-lg:justify-between items-center">
                 <div className="h-full w-[10%] ml-5 lg:hidden flex justify-center items-center">
                   <svg
@@ -125,7 +125,7 @@ export default function Home() {
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
-                    stroke="currentColor"
+                    stroke="grey"
                     className="size-8"
                   >
                     <path
@@ -138,10 +138,10 @@ export default function Home() {
 
                 <div className="flex h-full lg:flex-row space-x-0 w-[80%] max-lg:w-[30%] max-lg:pr-2.25 max-lg:justify-center">
                   <div className="h-full lg:w-[30%] max-lg:w-full flex justify-center items-center relative">
-                    <div className="lg:text-[3.5rem] max-lg:text-[2.3rem] lg:mb-[1.5rem] text-black font-blod absolute">
+                    <div className="lg:text-[3.5rem] max-lg:text-[2.3rem] lg:mb-[1.5rem] text-red-500 font-blod absolute">
                       RAXIN
                     </div>
-                    <div className="text-[6.5rem] max-lg:text-[3.6rem] ml-[0.65rem] mt-0.3 lg:ml-3.5 lg:mb-5 text-black font-bold absolute">
+                    <div className="text-[6.5rem] max-lg:text-[3.6rem] ml-[0.65rem] mt-0.3 lg:ml-3.5 lg:mb-5 text-red-500 font-bold absolute">
                       X
                     </div>
                   </div>
@@ -156,14 +156,14 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="h-full w-[10%] mr-5 lg:hidden flex justify-center items-center">
+                <div className="h-full pb-0.5 w-[35px] mr-5 lg:hidden flex justify-center items-center border border-red-500 rounded-[100%]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="size-6"
+                    stroke="red"
+                    className="size-5"
                   >
                     <path
                       strokeLinecap="round"
@@ -174,8 +174,8 @@ export default function Home() {
                 </div>
               </div>
               {/* <div className="w-full h-full flex justify-center"> */}
-              <div className="w-full h-full relative lg:hidden flex border-b border-black flex-row justify-end bottom-0 space-x-0 items-center group cursor-pointer">
-                <svg
+              <div className="w-full h-[65%] relative lg:hidden flex border-b border-black flex-row justify-end bottom-0 space-x-0 items-center group cursor-pointer">
+                {/* <svg
                   className="size-5 absolute left-[7%] w-[5%] mr-1 z-10 group cursor-pointer"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -193,7 +193,7 @@ export default function Home() {
                   type="text"
                   placeholder="SEARCH"
                   className="w-[87%] pr-11 focus:scale-100 focus:outline-none  "
-                ></input>
+                ></input> */}
               </div>
               {/* </div> */}
             </div>
@@ -238,7 +238,7 @@ export default function Home() {
             <div className="text-[2.5rem] max-lg:text-[2rem] ">
               MEN'S COLLECTION
             </div>
-            <button className="m-[2px] text-lg max-lg:px-3 max-lg:py-1 px-5 py-2 border-white border-[1px] hover:text-blue-300 hover:border-blue-300">
+            <button className="m-[2px] text-lg max-lg:px-3 max-lg:py-1 px-5 py-2 border-white border-[1px] transition-all duration-200 ease-in-out active:text-red-500 active:border-red-500">
               SHOP NOW
             </button>
           </div>
@@ -392,7 +392,7 @@ export default function Home() {
             <div className="text-[2.5rem] max-lg:text-[2rem]">
               MEN'S SUMMER 25
             </div>
-            <button className="m-[2px] max-lg:px-3 max-lg:py-1 text-lg px-5 py-2 border-white border-[1px] hover:text-blue-300 hover:border-blue-300">
+            <button className="m-[2px] max-lg:px-3 max-lg:py-1 text-lg px-5 py-2 border-white border-[1px] transition-all duration-200 ease-in-out active:text-red-500 active:border-red-500">
               SHOP NOW
             </button>
           </div>
@@ -412,11 +412,11 @@ export default function Home() {
               }
             />
           </div>
-          <div className="top-[70%] m-11 max-lg:m-6 absolute z-5 text-white font-bold ">
+          <div className="top-[5%] m-11 max-lg:m-6 absolute z-5 text-white font-bold ">
             <div className="text-[2.5rem] max-lg:text-[1.8rem] text-black">
               WOMEN'S <br className="md:hidden" /> SUMMER 25
             </div>
-            <button className="m-[2px] max-lg:px-3 max-lg:py-1 text-lg text-black px-5 py-2 border-black border-[1px] hover:text-blue-300 hover:border-blue-300">
+            <button className="m-[2px] max-lg:px-3 max-lg:py-1 text-lg text-black px-5 py-2 border-black border-[1px] transition-all duration-200 ease-in-out active:text-red-500 active:border-red-500">
               SHOP NOW
             </button>
           </div>
@@ -430,11 +430,11 @@ export default function Home() {
               className="object-cover" //object-contain
             />
           </div>
-          <div className="top-[70%] m-11 max-lg:m-6 absolute z-5 text-white font-bold ">
+          <div className="top-[10%] left-[30%] m-11 max-lg:m-6 absolute z-5 text-white font-bold ">
             <div className="text-[2.5rem] max-lg:text-[2rem]">
               GIFTS FOR HIM
             </div>
-            <button className="m-[2px] max-lg:px-3 max-lg:py-1 text-lg px-5 py-2 border-white border-[1px] hover:text-blue-300 hover:border-blue-300">
+            <button className="m-[2px] max-lg:px-3 max-lg:py-1 text-lg px-5 py-2 border-white border-[1px] transition-all duration-200 ease-in-out active:text-red-500 active:border-red-500">
               SHOP NOW
             </button>
           </div>
@@ -454,7 +454,41 @@ export default function Home() {
           </div>
           <div className="top-[70%] max-lg:m-6 m-11 absolute z-5 text-white font-bold ">
             <div className="text-[2.5rem] max-lg:text-[2rem]">EYEWEAR</div>
-            <button className="m-[2px] max-lg:px-3 max-lg:py-1 text-lg px-5 py-2 border-white border-[1px] hover:text-blue-300 hover:border-blue-300">
+            <button className="m-[2px] max-lg:px-3 max-lg:py-1 text-lg px-5 py-2 border-white border-[1px] transition-all duration-200 ease-in-out active:text-red-500 active:border-red-500">
+              SHOP NOW
+            </button>
+          </div>
+        </div>
+        <div className="h-[70%] relative">
+          <div className="absolute w-full h-full">
+            <Image
+              src="/image copy 3.png"
+              alt="Description of image"
+              fill
+              className="object-cover" //object-contain
+            />
+          </div>
+          <div className="top-[5%] left-[55%] m-11 max-lg:m-6 absolute z-5 text-white font-bold ">
+            <div className="text-[2.5rem] text-white max-lg:text-[2rem]">
+              WATCHES
+            </div>
+            <button className="m-[2px] text-white max-lg:px-3 max-lg:py-1 text-lg px-5 py-2 border-white border-[1px] transition-all duration-200 ease-in-out active:text-red-500 active:border-red-500">
+              SHOP NOW
+            </button>
+          </div>
+        </div>
+        <div className="h-[70%] relative">
+          <div className="absolute w-full h-full">
+            <Image
+              src="/image copy 4.png"
+              alt="Description of image"
+              fill
+              className="object-cover" //object-contain
+            />
+          </div>
+          <div className="top-[5%] m-11 max-lg:m-6 absolute z-5 text-white font-bold ">
+            <div className="text-[2.5rem] max-lg:text-[2rem]">FOOTWEAR</div>
+            <button className="m-[2px] max-lg:px-3 max-lg:py-1 text-lg px-5 py-2 border-white border-[1px] transition-all duration-200 ease-in-out active:text-red-500 active:border-red-500">
               SHOP NOW
             </button>
           </div>
@@ -474,14 +508,14 @@ export default function Home() {
               </div>
 
               <div className="h-full flex w-[40%] justify-center px-4 items-end">
-                <div className="h-[70%] w-[100%] text-[0.82rem] border-[1px] flex justify-center items-center font-bold font-geistMono">
+                <div className="h-[70%] w-[100%] text-white text-[0.82rem] border-[1px] border-black flex justify-center items-center font-bold font-geistMono transition-all duration-200 ease-in-out active:bg-black bg-red-500">
                   SUBSCRIBE
                 </div>
               </div>
             </div>
             <div className="mt-3 h-[40%] py-4 w-full border-b-[1px] border-gray-400 flex flex-col justify-between items-center">
               <div className="w-full flex text-[1.1rem] justify-start font-geistMono">
-                CUSTUMER SUPPORT
+                CUSTOMER SUPPORT
               </div>
               <div className="w-full text-[0.9rem] text-gray-500 flex justify-start">
                 TRACK YOUR ORDER
@@ -523,7 +557,9 @@ export default function Home() {
             </div>
           </div>
           <div className="h-[10%] border-t-[1px] border-gray-200 p-4">
-            <div className="font-montserrat text-[2.5rem]">RAVIN X</div>
+            <div className="font-montserrat text-red-500 text-[2.5rem]">
+              RAVIN X
+            </div>
             <div className="font-montserrat text-[0.6rem] h-[30%]">
               <div className=" h-full w-[80%]">
                 <div className="flex flex-row justify-between">
