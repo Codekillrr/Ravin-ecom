@@ -15,7 +15,8 @@ export default function Home() {
     <div className="h-full w-full">
       <div className="absolute w-full h-full overflow-auto">
         <header className="sticky inset-0 z-10">
-          <nav className="bg-white h-[22%] lg:border-b border-gray-200">
+          <nav className="bg-white relative h-[22%] lg:border-b border-gray-200">
+            <div className="h-[20%] w-[50px] bg-[url('https://www.tomfordfashion.com/on/demandware.static/Sites-tomford-Site/-/en_US/v1747454756923/fonts/flags//4x3/us.svg')] bg-contain bg-no-repeat top-[30%] left-[72%] flex justify-center items-center absolute pointer-events-none"></div>
             <div className="max-lg:hidden h-14 w-full">
               <div className="px-5 h-full w-full ">
                 <div className="h-full w-[150px] ml-auto flex justify-center items-center">
@@ -162,7 +163,7 @@ export default function Home() {
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
-                    stroke="red"
+                    stroke="black"
                     className="size-5"
                   >
                     <path
