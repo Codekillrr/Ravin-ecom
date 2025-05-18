@@ -21,7 +21,7 @@ export default function Home() {
               <div className="px-5 h-full w-full ">
                 <div className="h-full w-[150px] ml-auto flex justify-center items-center">
                   <div className="font-montserrat text-[0.75rem]">RAVIN</div>
-                  <div className="font-montserrat text-[0.75rem] font-bold ">
+                  <div className="font-montserrat text-[0.75rem] font-bold">
                     X
                   </div>
                   <div className="font-montserrat text-[0.75rem]">BEAUTY</div>
@@ -284,7 +284,7 @@ export default function Home() {
               }}
             >
               <SwiperSlide>
-                <div className="flex flex-col h-full w-full border-[1px] border-gray-200 bg-gradient-to-br from-gray-200 to-white">
+                <div className="flex flex-col h-full w-full border-[1px] border-gray-200 bg-gradient-to-br from-gray-200 via-white to-gray-200">
                   <Image
                     src="/image.png"
                     alt="Description of image"
@@ -302,7 +302,7 @@ export default function Home() {
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className="flex flex-col h-full w-full border-[1px] border-gray-200 bg-gradient-to-br from-gray-200 to-white">
+                <div className="flex flex-col h-full w-full border-[1px] border-gray-200 bg-gradient-to-br from-gray-200 via-white to-gray-200">
                   <Image
                     src="/image copy.png"
                     alt="Description of image"
@@ -320,7 +320,7 @@ export default function Home() {
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className="flex flex-col h-full w-full border-[1px] border-gray-200 bg-gradient-to-br from-gray-200 to-white">
+                <div className="flex flex-col h-full w-full border-[1px] border-gray-200 bg-gradient-to-br from-gray-200 via-white to-gray-200">
                   <Image
                     src="/image.png"
                     alt="Description of image"
@@ -338,7 +338,7 @@ export default function Home() {
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className="flex flex-col h-full w-full border-[1px] border-gray-200 bg-gradient-to-br from-gray-200 to-white">
+                <div className="flex flex-col h-full w-full border-[1px] border-gray-200 bg-gradient-to-br from-gray-200 via-white to-gray-200">
                   <Image
                     src="/image.png"
                     alt="Description of image"
@@ -356,7 +356,7 @@ export default function Home() {
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className="flex flex-col h-full w-full border-[1px] border-gray-200 bg-gradient-to-br from-gray-200 to-white">
+                <div className="flex flex-col h-full w-full border-[1px] border-gray-200 bg-gradient-to-br from-gray-200 via-white to-gray-200">
                   <Image
                     src="/image.png"
                     alt="Description of image"
