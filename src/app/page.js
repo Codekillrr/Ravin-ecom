@@ -508,7 +508,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="h-full flex w-[40%] justify-center px-4 items-end">
+              <div className="h-full flex w-[40%] justify-center pl-4 items-end">
                 <div className="h-[70%] w-[100%] text-white text-[0.82rem] border-[1px] border-black flex justify-center items-center font-bold font-geistMono transition-all duration-200 ease-in-out active:bg-black bg-red-500">
                   SUBSCRIBE
                 </div>
