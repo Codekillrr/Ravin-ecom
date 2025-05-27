@@ -13,13 +13,13 @@ import "swiper/css/pagination";
 export default function Home() {
   return (
     <div className="h-full w-full">
-      <div className="absolute w-full h-full overflow-auto">
+      <div className="absolute h-full w-full overflow-auto">
         <header className="sticky inset-0 z-10">
-          <nav className="bg-white relative h-[22%] lg:border-b border-gray-200">
-            <div className="h-[20%] w-[50px] bg-[url('https://www.tomfordfashion.com/on/demandware.static/Sites-tomford-Site/-/en_US/v1747454756923/fonts/flags//4x3/us.svg')] bg-contain bg-no-repeat top-[30%] left-[72%] flex justify-center items-center absolute pointer-events-none"></div>
-            <div className="max-lg:hidden h-14 w-full">
-              <div className="px-5 h-full w-full ">
-                <div className="h-full w-[150px] ml-auto flex justify-center items-center">
+          <nav className="relative h-[22%] border-gray-200 bg-white lg:border-b">
+            <div className="pointer-events-none absolute top-[30%] left-[72%] flex h-[20%] w-[50px] items-center justify-center bg-[url('https://www.tomfordfashion.com/on/demandware.static/Sites-tomford-Site/-/en_US/v1747454756923/fonts/flags//4x3/us.svg')] bg-contain bg-no-repeat"></div>
+            <div className="h-14 w-full max-lg:hidden">
+              <div className="h-full w-full px-5">
+                <div className="ml-auto flex h-full w-[150px] items-center justify-center">
                   <div className="font-montserrat text-[0.75rem]">RAVIN</div>
                   <div className="font-montserrat text-[0.75rem] font-bold">
                     X
@@ -30,18 +30,18 @@ export default function Home() {
             </div>
 
             <div className="h-17 w-auto max-lg:hidden">
-              <div className="h-full w-auto px-5 flex justify-end items-center">
-                <div className="h-[50px] flex flex-row">
-                  <div className="w-47 flex justify-center items-center">
+              <div className="flex h-full w-auto items-center justify-end px-5">
+                <div className="flex h-[50px] flex-row">
+                  <div className="flex w-47 items-center justify-center">
                     {/* <div className=" flex flex-row justify-between border-b border-black"> */}
-                    <div className=" w-full h-full relative flex items-center group cursor-pointer">
+                    <div className="group relative flex h-full w-full cursor-pointer items-center">
                       <input
                         type="text"
                         placeholder="SEARCH"
-                        className="w-[100%] absolute focus:scale-100 focus:outline-none focus:border-b focus:border-black border-b border-black origin-right scale-x-0 transition-transform duration-300 group-hover:scale-x-100 transform"
+                        className="absolute w-[100%] origin-right scale-x-0 transform border-b border-black transition-transform duration-300 group-hover:scale-x-100 focus:scale-100 focus:border-b focus:border-black focus:outline-none"
                       ></input>
                       <svg
-                        className="size-5 z-10 absolute right-0 group cursor-pointer"
+                        className="group absolute right-0 z-10 size-5 cursor-pointer"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
@@ -58,13 +58,13 @@ export default function Home() {
                     {/* </div> */}
                   </div>
 
-                  <div className="w-80 flex flex-row justify-evenly">
-                    <div className="h-full w-[60%] flex pl-18 pr-6 justify-center items-center">
-                      <button className="text-sm font-bold flex flex-row hover:text-[0.9rem]">
+                  <div className="flex w-80 flex-row justify-evenly">
+                    <div className="flex h-full w-[60%] items-center justify-center pr-6 pl-18">
+                      <button className="flex flex-row text-sm font-bold hover:text-[0.9rem]">
                         🇵🇰PAKISTAN
                       </button>
                     </div>
-                    <div className="w-[40%] pr-5 pb-2 flex flex-row space-x-4 items-center justify-end">
+                    <div className="flex w-[40%] flex-row items-center justify-end space-x-4 pr-5 pb-2">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -118,9 +118,9 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="lg:h-17 max-lg:pt-3.5 max-lg:h-18 w-auto max-lg:flex max-lg:flex-col max-lg:space-y-0">
-              <div className="h-full w-auto lg:px-8 flex max-lg:justify-between items-center">
-                <div className="h-full w-[10%] ml-5 lg:hidden flex justify-center items-center">
+            <div className="w-auto max-lg:flex max-lg:h-18 max-lg:flex-col max-lg:space-y-0 max-lg:pt-3.5 lg:h-17">
+              <div className="flex h-full w-auto items-center max-lg:justify-between lg:px-8">
+                <div className="ml-5 flex h-full w-[10%] items-center justify-center lg:hidden">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -137,18 +137,18 @@ export default function Home() {
                   </svg>
                 </div>
 
-                <div className="flex h-full lg:flex-row space-x-0 w-[80%] max-lg:w-[30%] max-lg:pr-2.25 max-lg:justify-center">
-                  <div className="h-full lg:w-[30%] max-lg:w-full flex justify-center items-center relative">
-                    <div className="lg:text-[3.5rem] max-lg:text-[2.3rem] lg:mb-[1.5rem] text-red-500 font-blod absolute">
+                <div className="flex h-full w-[80%] space-x-0 max-lg:w-[30%] max-lg:justify-center max-lg:pr-2.25 lg:flex-row">
+                  <div className="relative flex h-full items-center justify-center max-lg:w-full lg:w-[30%]">
+                    <div className="font-blod absolute text-black max-lg:text-[2.3rem] lg:mb-[1.5rem] lg:text-[3.5rem]">
                       RAXIN
                     </div>
-                    <div className="text-[6.5rem] max-lg:text-[3.6rem] ml-[0.65rem] mt-0.3 lg:ml-3.5 lg:mb-5 text-red-500 font-bold absolute">
+                    <div className="mt-0.3 absolute ml-[0.65rem] text-[6.5rem] font-bold text-black max-lg:text-[3.6rem] lg:mb-5 lg:ml-3.5">
                       X
                     </div>
                   </div>
 
-                  <div className="max-lg:hidden w-full flex items-center">
-                    <div className="font-bold text-xl ml-5 w-full h-[50%] flex flex-row justify-start items-center space-x-9">
+                  <div className="flex w-full items-center max-lg:hidden">
+                    <div className="ml-5 flex h-[50%] w-full flex-row items-center justify-start space-x-9 text-xl font-bold">
                       <button>HIGHLIGHTS</button>
                       <button>MEN</button>
                       <button>WOMEN</button>
@@ -157,7 +157,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="h-full pb-0.5 w-[35px] mr-5 lg:hidden flex justify-center items-center border border-red-500 rounded-[100%]">
+                <div className="mr-5 flex h-full w-[35px] items-center justify-center pb-0.5 lg:hidden">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -175,7 +175,7 @@ export default function Home() {
                 </div>
               </div>
               {/* <div className="w-full h-full flex justify-center"> */}
-              <div className="w-full h-[65%] relative lg:hidden flex border-b border-black flex-row justify-end bottom-0 space-x-0 items-center group cursor-pointer">
+              <div className="group relative bottom-0 flex h-[65%] w-full cursor-pointer flex-row items-center justify-end space-x-0 border-b border-black lg:hidden">
                 {/* <svg
                   className="size-5 absolute left-[7%] w-[5%] mr-1 z-10 group cursor-pointer"
                   xmlns="http://www.w3.org/2000/svg"
@@ -202,15 +202,15 @@ export default function Home() {
         </header>
 
         <div className="relative h-[83%]">
-          <div className="absolute w-full h-full">
+          <div className="absolute h-full w-full">
             {/* <Image 
             src="/SliderImages/image1.png"  
             alt="Description of image"
             fill
             className="object-cover" //object-contain
             /> */}
-            <div className="h-full w-full flex flex-row">
-              <div className="h-full lg:w-[50%] max-lg:hidden relative overflow-hidden">
+            <div className="flex h-full w-full flex-row">
+              <div className="relative h-full overflow-hidden max-lg:hidden lg:w-[50%]">
                 <Video
                   src={Video1}
                   autoplay
@@ -219,10 +219,10 @@ export default function Home() {
                   loop
                   controls={false}
                   videoQuality="premium"
-                  className="w-full h-full object-cover"
+                  className="h-full w-full object-cover"
                 ></Video>
               </div>
-              <div className="h-full lg:w-[50%] relative overflow-hidden">
+              <div className="relative h-full overflow-hidden lg:w-[50%]">
                 <Video
                   src={Video2}
                   autoplay
@@ -230,28 +230,28 @@ export default function Home() {
                   playInline
                   loop
                   controls={false}
-                  className="w-full h-full object-cover"
+                  className="h-full w-full object-cover"
                 ></Video>
               </div>
             </div>
           </div>
-          <div className="top-[70%] m-11 max-lg:m-6 absolute z-5 text-white font-bold ">
-            <div className="text-[2.5rem] max-lg:text-[2rem] ">
+          <div className="absolute top-[70%] z-5 m-11 font-bold text-white max-lg:m-6">
+            <div className="text-[2.5rem] max-lg:text-[2rem]">
               MEN'S COLLECTION
             </div>
-            <button className="m-[2px] text-lg max-lg:px-3 max-lg:py-1 px-5 py-2 border-white border-[1px] transition-all duration-200 ease-in-out active:text-red-500 active:border-red-500">
+            <button className="m-[2px] border-[1px] border-white px-5 py-2 text-lg transition-all duration-200 ease-in-out active:border-red-500 active:text-red-500 max-lg:px-3 max-lg:py-1">
               SHOP NOW
             </button>
           </div>
         </div>
 
-        <div className="h-[400px] my-5">
-          <div className="w-full h-15 px-5 flex flex-row justify-between">
+        <div className="my-5 h-[400px]">
+          <div className="flex h-15 w-full flex-row justify-between px-5">
             <div className="h-full w-[60%]">
               <div className="text-2xl font-bold">NEW ARRIVALS</div>
-              <div className="text-[0.75] font-bold">SHOP ALL</div>
+              <div className="font-bold text-[0.75]">SHOP ALL</div>
             </div>
-            <div className="h-full flex justify-center items-center w-[20%]">
+            <div className="flex h-full w-[20%] items-center justify-center">
               {/* <div className="h-[50%] w-full border-2"></div> */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -269,7 +269,7 @@ export default function Home() {
               </svg>
             </div>
           </div>
-          <div className="w-full max-w-[900px] mx-auto h-[360px] p-4">
+          <div className="mx-auto h-[360px] w-full max-w-[900px] p-4">
             <Swiper
               slidesPerView={2}
               spaceBetween={10}
@@ -284,15 +284,15 @@ export default function Home() {
               }}
             >
               <SwiperSlide>
-                <div className="flex flex-col h-full w-full border-[1px] border-gray-200 bg-gradient-to-br from-gray-200 via-white to-gray-200">
+                <div className="flex h-full w-full flex-col border-[1px] border-gray-200 bg-gradient-to-br from-gray-200 via-white to-gray-200">
                   <Image
                     src="/image.png"
                     alt="Description of image"
                     width={400}
                     height={200}
-                    className="w-full h-[200px] object-cover"
+                    className="h-[200px] w-full object-cover"
                   />
-                  <div className="flex flex-col justify-between p-3 font-geistMono">
+                  <div className="font-geistMono flex flex-col justify-between p-3">
                     <div className="text-[0.8rem] font-bold">
                       DOUBLE BREASTED PEAKED LAPEL JACKET
                     </div>
@@ -302,15 +302,15 @@ export default function Home() {
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className="flex flex-col h-full w-full border-[1px] border-gray-200 bg-gradient-to-br from-gray-200 via-white to-gray-200">
+                <div className="flex h-full w-full flex-col border-[1px] border-gray-200 bg-gradient-to-br from-gray-200 via-white to-gray-200">
                   <Image
                     src="/image copy.png"
                     alt="Description of image"
                     width={400}
                     height={200}
-                    className="w-full h-[200px] object-cover"
+                    className="h-[200px] w-full object-cover"
                   />
-                  <div className="flex flex-col justify-between p-3 font-geistMono">
+                  <div className="font-geistMono flex flex-col justify-between p-3">
                     <div className="text-[0.8rem] font-bold">
                       LONG SLEEVE V-NECK LAVALLIERE BLOUSE
                     </div>
@@ -320,15 +320,15 @@ export default function Home() {
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className="flex flex-col h-full w-full border-[1px] border-gray-200 bg-gradient-to-br from-gray-200 via-white to-gray-200">
+                <div className="flex h-full w-full flex-col border-[1px] border-gray-200 bg-gradient-to-br from-gray-200 via-white to-gray-200">
                   <Image
                     src="/image.png"
                     alt="Description of image"
                     width={400}
                     height={200}
-                    className="w-full h-[200px] object-cover"
+                    className="h-[200px] w-full object-cover"
                   />
-                  <div className="flex flex-col justify-between p-3 font-geistMono">
+                  <div className="font-geistMono flex flex-col justify-between p-3">
                     <div className="text-[0.8rem] font-bold">
                       DOUBLE BREASTED PEAKED LAPEL JACKET
                     </div>
@@ -338,15 +338,15 @@ export default function Home() {
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className="flex flex-col h-full w-full border-[1px] border-gray-200 bg-gradient-to-br from-gray-200 via-white to-gray-200">
+                <div className="flex h-full w-full flex-col border-[1px] border-gray-200 bg-gradient-to-br from-gray-200 via-white to-gray-200">
                   <Image
                     src="/image.png"
                     alt="Description of image"
                     width={400}
                     height={200}
-                    className="w-full h-[200px] object-cover"
+                    className="h-[200px] w-full object-cover"
                   />
-                  <div className="flex flex-col justify-between p-3 font-geistMono">
+                  <div className="font-geistMono flex flex-col justify-between p-3">
                     <div className="text-[0.8rem] font-bold">
                       DOUBLE BREASTED PEAKED LAPEL JACKET
                     </div>
@@ -356,15 +356,15 @@ export default function Home() {
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className="flex flex-col h-full w-full border-[1px] border-gray-200 bg-gradient-to-br from-gray-200 via-white to-gray-200">
+                <div className="flex h-full w-full flex-col border-[1px] border-gray-200 bg-gradient-to-br from-gray-200 via-white to-gray-200">
                   <Image
                     src="/image.png"
                     alt="Description of image"
                     width={400}
                     height={200}
-                    className="w-full h-[200px] object-cover"
+                    className="h-[200px] w-full object-cover"
                   />
-                  <div className="flex flex-col justify-between p-3 font-geistMono">
+                  <div className="font-geistMono flex flex-col justify-between p-3">
                     <div className="text-[0.8rem] font-bold">
                       DOUBLE BREASTED PEAKED LAPEL JACKET
                     </div>
@@ -376,8 +376,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="h-[70%] relative">
-          <div className="absolute w-full h-full">
+        <div className="relative h-[70%]">
+          <div className="absolute h-full w-full">
             <Image
               src="/image copy 2.png"
               alt="Description of image"
@@ -389,17 +389,17 @@ export default function Home() {
               }}
             />
           </div>
-          <div className="top-[70%] m-11 max-lg:m-6 absolute z-5 text-white font-bold ">
+          <div className="absolute top-[70%] z-5 m-11 font-bold text-white max-lg:m-6">
             <div className="text-[2.5rem] max-lg:text-[2rem]">
               MEN'S SUMMER 25
             </div>
-            <button className="m-[2px] max-lg:px-3 max-lg:py-1 text-lg px-5 py-2 border-white border-[1px] transition-all duration-200 ease-in-out active:text-red-500 active:border-red-500">
+            <button className="m-[2px] border-[1px] border-white px-5 py-2 text-lg transition-all duration-200 ease-in-out active:border-red-500 active:text-red-500 max-lg:px-3 max-lg:py-1">
               SHOP NOW
             </button>
           </div>
         </div>
-        <div className="h-[70%] relative">
-          <div className="absolute w-full h-full">
+        <div className="relative h-[70%]">
+          <div className="absolute h-full w-full">
             <Image
               src="/SliderImages/image7.png"
               alt="Description of image"
@@ -413,17 +413,17 @@ export default function Home() {
               }
             />
           </div>
-          <div className="top-[5%] m-11 max-lg:m-6 absolute z-5 text-white font-bold ">
-            <div className="text-[2.5rem] max-lg:text-[1.8rem] text-black">
+          <div className="absolute top-[5%] z-5 m-11 font-bold text-white max-lg:m-6">
+            <div className="text-[2.5rem] text-black max-lg:text-[1.8rem]">
               WOMEN'S <br className="md:hidden" /> SUMMER 25
             </div>
-            <button className="m-[2px] max-lg:px-3 max-lg:py-1 text-lg text-black px-5 py-2 border-black border-[1px] transition-all duration-200 ease-in-out active:text-red-500 active:border-red-500">
+            <button className="m-[2px] border-[1px] border-black px-5 py-2 text-lg text-black transition-all duration-200 ease-in-out active:border-red-500 active:text-red-500 max-lg:px-3 max-lg:py-1">
               SHOP NOW
             </button>
           </div>
         </div>
-        <div className="h-[70%] relative">
-          <div className="absolute w-full h-full">
+        <div className="relative h-[70%]">
+          <div className="absolute h-full w-full">
             <Image
               src="/SliderImages/image4.png"
               alt="Description of image"
@@ -431,17 +431,17 @@ export default function Home() {
               className="object-cover" //object-contain
             />
           </div>
-          <div className="top-[10%] left-[30%] m-11 max-lg:m-6 absolute z-5 text-white font-bold ">
+          <div className="absolute top-[10%] left-[30%] z-5 m-11 font-bold text-white max-lg:m-6">
             <div className="text-[2.5rem] max-lg:text-[2rem]">
               GIFTS FOR HIM
             </div>
-            <button className="m-[2px] max-lg:px-3 max-lg:py-1 text-lg px-5 py-2 border-white border-[1px] transition-all duration-200 ease-in-out active:text-red-500 active:border-red-500">
+            <button className="m-[2px] border-[1px] border-white px-5 py-2 text-lg transition-all duration-200 ease-in-out active:border-red-500 active:text-red-500 max-lg:px-3 max-lg:py-1">
               SHOP NOW
             </button>
           </div>
         </div>
-        <div className="h-[70%] relative">
-          <div className="absolute w-full h-full">
+        <div className="relative h-[70%]">
+          <div className="absolute h-full w-full">
             <Image
               src="/SliderImages/image5.png"
               alt="Description of image"
@@ -453,15 +453,15 @@ export default function Home() {
               }}
             />
           </div>
-          <div className="top-[70%] max-lg:m-6 m-11 absolute z-5 text-white font-bold ">
+          <div className="absolute top-[70%] z-5 m-11 font-bold text-white max-lg:m-6">
             <div className="text-[2.5rem] max-lg:text-[2rem]">EYEWEAR</div>
-            <button className="m-[2px] max-lg:px-3 max-lg:py-1 text-lg px-5 py-2 border-white border-[1px] transition-all duration-200 ease-in-out active:text-red-500 active:border-red-500">
+            <button className="m-[2px] border-[1px] border-white px-5 py-2 text-lg transition-all duration-200 ease-in-out active:border-red-500 active:text-red-500 max-lg:px-3 max-lg:py-1">
               SHOP NOW
             </button>
           </div>
         </div>
-        <div className="h-[70%] relative">
-          <div className="absolute w-full h-full">
+        <div className="relative h-[70%]">
+          <div className="absolute h-full w-full">
             <Image
               src="/image copy 3.png"
               alt="Description of image"
@@ -469,17 +469,17 @@ export default function Home() {
               className="object-cover" //object-contain
             />
           </div>
-          <div className="top-[5%] left-[55%] m-11 max-lg:m-6 absolute z-5 text-white font-bold ">
+          <div className="absolute top-[5%] left-[55%] z-5 m-11 font-bold text-white max-lg:m-6">
             <div className="text-[2.5rem] text-white max-lg:text-[2rem]">
               WATCHES
             </div>
-            <button className="m-[2px] text-white max-lg:px-3 max-lg:py-1 text-lg px-5 py-2 border-white border-[1px] transition-all duration-200 ease-in-out active:text-red-500 active:border-red-500">
+            <button className="m-[2px] border-[1px] border-white px-5 py-2 text-lg text-white transition-all duration-200 ease-in-out active:border-red-500 active:text-red-500 max-lg:px-3 max-lg:py-1">
               SHOP NOW
             </button>
           </div>
         </div>
-        <div className="h-[70%] relative">
-          <div className="absolute w-full h-full">
+        <div className="relative h-[70%]">
+          <div className="absolute h-full w-full">
             <Image
               src="/image copy 4.png"
               alt="Description of image"
@@ -487,87 +487,85 @@ export default function Home() {
               className="object-cover" //object-contain
             />
           </div>
-          <div className="top-[5%] m-11 max-lg:m-6 absolute z-5 text-white font-bold ">
+          <div className="absolute top-[5%] z-5 m-11 font-bold text-white max-lg:m-6">
             <div className="text-[2.5rem] max-lg:text-[2rem]">FOOTWEAR</div>
-            <button className="m-[2px] max-lg:px-3 max-lg:py-1 text-lg px-5 py-2 border-white border-[1px] transition-all duration-200 ease-in-out active:text-red-500 active:border-red-500">
+            <button className="m-[2px] border-[1px] border-white px-5 py-2 text-lg transition-all duration-200 ease-in-out active:border-red-500 active:text-red-500 max-lg:px-3 max-lg:py-1">
               SHOP NOW
             </button>
           </div>
         </div>
 
-        <footer className="h-[40rem] flex flex-col space-y-5 mt-5">
-          <div className="h-[30rem] mx-4">
-            <div className="h-[4rem] w-full flex flex-row justify-between items-end">
-              <div className="flex flex-row w-[70%] justify-between h-[25%] items-center">
-                <div className="border-b-[1px] w-[100%] border-black h-full flex items-end">
+        <footer className="mt-5 flex h-[40rem] flex-col space-y-5">
+          <div className="mx-4 h-[30rem]">
+            <div className="flex h-[4rem] w-full flex-row items-end justify-between">
+              <div className="flex h-[25%] w-[70%] flex-row items-center justify-between">
+                <div className="flex h-full w-[100%] items-end border-b-[1px] border-black">
                   <input
                     type="text"
                     placeholder="ENTER EMAIL ADDRESS"
-                    className="w-full bottom-0 pb-[0.3rem] text-[0.82rem] text-black font-geistMono"
+                    className="font-geistMono bottom-0 w-full pb-[0.3rem] text-[0.82rem] text-black"
                   ></input>
                 </div>
               </div>
 
-              <div className="h-full flex w-[40%] justify-center pl-4 items-end">
-                <div className="h-[70%] w-[100%] text-white text-[0.82rem] border-[1px] border-black flex justify-center items-center font-bold font-geistMono transition-all duration-200 ease-in-out active:bg-black bg-red-500">
+              <div className="flex h-full w-[40%] items-end justify-center pl-4">
+                <div className="font-geistMono flex h-[70%] w-[100%] items-center justify-center border-[1px] border-black bg-red-500 text-[0.82rem] font-bold text-white transition-all duration-200 ease-in-out active:bg-black">
                   SUBSCRIBE
                 </div>
               </div>
             </div>
-            <div className="mt-3 h-[40%] py-4 w-full border-b-[1px] border-gray-400 flex flex-col justify-between items-center">
-              <div className="w-full flex text-[1.1rem] justify-start font-geistMono">
+            <div className="mt-3 flex h-[40%] w-full flex-col items-center justify-between border-b-[1px] border-gray-400 py-4">
+              <div className="font-geistMono flex w-full justify-start text-[1.1rem]">
                 CUSTOMER SUPPORT
               </div>
-              <div className="w-full text-[0.9rem] text-gray-500 flex justify-start">
+              <div className="flex w-full justify-start text-[0.9rem] text-gray-500">
                 TRACK YOUR ORDER
               </div>
-              <div className="w-full text-[0.9rem] text-gray-500 flex justify-start font-geistMono">
+              <div className="font-geistMono flex w-full justify-start text-[0.9rem] text-gray-500">
                 CONTACT US
               </div>
-              <div className="w-full text-[0.9rem] text-gray-500 flex justify-start font-geistMono">
+              <div className="font-geistMono flex w-full justify-start text-[0.9rem] text-gray-500">
                 STORE LOCATIONS
               </div>
-              <div className="w-full text-[0.9rem] text-gray-500 flex justify-start font-geistMono">
+              <div className="font-geistMono flex w-full justify-start text-[0.9rem] text-gray-500">
                 FAQ
               </div>
-              <div className="w-full text-[0.9rem] text-gray-500 flex justify-start font-geistMono">
+              <div className="font-geistMono flex w-full justify-start text-[0.9rem] text-gray-500">
                 SHIPPING & RETURNS
               </div>
             </div>
-            <div className=" h-[18%] py-4 w-full border-b-[1px] border-gray-400 flex flex-col space-y-2 justify-start items-center">
-              <div className="w-full flex text-[1.1rem] justify-start font-geistMono">
+            <div className="flex h-[18%] w-full flex-col items-center justify-start space-y-2 border-b-[1px] border-gray-400 py-4">
+              <div className="font-geistMono flex w-full justify-start text-[1.1rem]">
                 SERVICE
               </div>
-              <div className="w-full text-[0.9rem] text-gray-500 flex justify-start">
+              <div className="flex w-full justify-start text-[0.9rem] text-gray-500">
                 MADE TO MEASURE
               </div>
             </div>
-            <div className=" h-[30%] py-4 w-full  flex flex-col space-y-2 justify-start items-center">
-              <div className="w-full flex text-[1.1rem] justify-start font-geistMono">
+            <div className="flex h-[30%] w-full flex-col items-center justify-start space-y-2 py-4">
+              <div className="font-geistMono flex w-full justify-start text-[1.1rem]">
                 ABOUT
               </div>
-              <div className="w-full text-[0.9rem] text-gray-500 flex justify-start">
+              <div className="flex w-full justify-start text-[0.9rem] text-gray-500">
                 NEWS
               </div>
-              <div className="w-full text-[0.9rem] text-gray-500 flex justify-start">
+              <div className="flex w-full justify-start text-[0.9rem] text-gray-500">
                 PRIVACY POLICY
               </div>
-              <div className="w-full text-[0.9rem] text-gray-500 flex justify-start">
+              <div className="flex w-full justify-start text-[0.9rem] text-gray-500">
                 ACCESSIBLITY
               </div>
             </div>
           </div>
           <div className="h-[10%] border-t-[1px] border-gray-200">
-            <div className="font-montserrat text-red-500 text-[2.5rem] pl-5">
-              RAVIN X
-            </div>
-            <div className="font-montserrat text-[0.6rem] h-[30%]">
+            <div className="font-montserrat pl-5 text-[2.5rem]">RAVIN X</div>
+            <div className="font-montserrat h-[30%] text-[0.6rem]">
               <div className="h-full w-[80%]">
                 <div className="flex flex-row justify-between">
-                  <div className="w-[20%] flex justify-end">
+                  <div className="flex w-[20%] justify-end">
                     <div>SITE MAP</div>
                   </div>
-                  <div className="w-[36%] flex flex-row justify-between">
+                  <div className="flex w-[36%] flex-row justify-between">
                     <div>|</div>
                     <div>PRIVACY POLICY</div> <div>|</div>
                   </div>
@@ -575,8 +573,8 @@ export default function Home() {
                     <div>TERMS & CONDITIONS</div>
                   </div>
                 </div>
-                <div className="font-montserrat text-[0.6rem] pl-5 mt-4">
-                  © RAVIN X ALL RIGHTS RESERVED
+                <div className="font-montserrat mt-4 pl-5 text-[0.6rem]">
+                  © IBADULLAH MEMON ALL RIGHTS RESERVED
                 </div>
               </div>
             </div>
